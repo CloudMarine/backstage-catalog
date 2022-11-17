@@ -44,8 +44,6 @@ spec:
         get:
           summary: List all pets
           operationId: listPets
-          tags:
-            - pets
           parameters:
             - name: limit
               in: query
@@ -75,8 +73,6 @@ spec:
         post:
           summary: Create a pet
           operationId: createPets
-          tags:
-            - pets
           responses:
             201:
               description: Null response
@@ -90,8 +86,6 @@ spec:
         get:
           summary: Info for a specific pet
           operationId: showPetById
-          tags:
-            - pets
           parameters:
             - name: petId
               in: path
